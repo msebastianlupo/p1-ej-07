@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Funciones: Ejercicio 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    
+        <header>
+            <h1>Consigna</h1>
+        </header>
+        <main>
+            <p>Tenemos una especie de "calculadora", con 7 botones:</p>
+            <ul>
+                <li>Tenemos 2 botones para ingresar valores numéricos.</li>
+                <li>Tenemos 4 botones para realizar una operación aritmética.</li>
+                <li>Tenemos un botón que muestra el resultado.</li>
+            </ul>
+            <p>Ya tienen una función asignada a su onclick:</p>
+            <ul>
+                <li>obtenerNumero1</li>
+                <li>obtenerNumero2</li>
+                <li>operacion</li>
+                <li>mostrar</li>
+            </ul>
+            <p>El funcionamiento debe ser el siguiente:</p>
+            <ul>
+                <li>Ingresar dos valores.</li>
+                <li>Seleccionar una operación.</li>
+                <li>Mostrar el resultado.</li>
+            </ul>
+            <p>Se debe verificar que los datos sean válidos (en caso contrario notificarlo).</p>
+            <p>Se deben utilizar variables globales.</p>
+            <p><strong>Extra:</strong> crear una función para ingresar y validar un número.</p>
+            <div>
+                <button onclick="obtenerNumero1();">Ingresar valor 1</button>
+                <button onclick="obtenerNumero2();">Ingresar valor 2</button>
+            </div>
+            <div>
+                <button onclick="operacion('sumar');">+</button>
+                <button onclick="operacion('restar');">-</button>
+                <button onclick="operacion('multiplicar');">*</button>
+                <button onclick="operacion('dividir');">/</button>
+            </div>
+            <button onclick="mostrar();">Mostrar resultado</button>
+            <ul id="salida"></ul>
+  </body>
+</html>
